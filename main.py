@@ -36,10 +36,10 @@ if __name__ == "__main__":
   
     @tasks.loop(seconds=300)
     async def change_status():
-        status: str = choice(['test', 'yes', 'no'])
+        status: str = choice(['vscode', 'arknights', 'FAKKU.net'])
         activity: discord.Activity = discord.Activity(
-            type=discord.ActivityType.listening, name=status)
+            type=discord.ActivityType.playing, name=status)
         await bot.change_presence(activity=activity)
 
-    keepalive()
+    #keepalive()
     bot.run(TOKEN)
