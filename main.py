@@ -12,7 +12,6 @@ from keepalive import keepalive
 
 
 if __name__ == "__main__":
-    TOKEN = os.do 
 
     bot = commands.Bot(command_prefix=commands.when_mentioned_or('IoIi '))
     slash = SlashCommand(bot, sync_commands = True)
