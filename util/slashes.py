@@ -5,10 +5,8 @@ from discord.ext import commands
 import discord, os
 from util.functions import amiya, rabbit_hump
 from datetime import datetime
+from env import guild_ids
 
-
-
-guild_ids = [int(id) for id in os.environ['guild_ids'].split(',')]
 
 
 class Slashes(commands.Cog):

@@ -7,11 +7,12 @@ from voice.music import Music
 from voice.voiceslash import Vslash
 from util.slashes import Slashes
 from legacy.message import Yukinian
-
+from env import TOKEN
 from keepalive import keepalive
 
+
 if __name__ == "__main__":
-    TOKEN = os.environ['DISCORD_TOKEN']
+    TOKEN = os.do 
 
     bot = commands.Bot(command_prefix=commands.when_mentioned_or('IoIi '))
     slash = SlashCommand(bot, sync_commands = True)

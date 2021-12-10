@@ -2,14 +2,14 @@ from discord_slash import SlashContext, cog_ext
 from discord_slash.utils.manage_commands import create_option
 from discord.ext import commands
 import discord
-import os
+from env import guild_ids
 import math
 import voice.settings as con
 import asyncio
 from voice.ytdlstuff import Song, YTDLSource
 
 
-guild_ids = [int(id) for id in os.environ['guild_ids'].split(',')]
+
 
 Song_queue = {}
 

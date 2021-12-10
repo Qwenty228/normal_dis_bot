@@ -4,9 +4,7 @@ import discord, os
 from discord.ext import commands
 from voice.ytdlstuff import YTDLSource1
 from random import choice
-
-
-guild_ids = [int(id) for id in os.environ['guild_ids'].split(',')]
+from env import guild_ids
 
 
 class Vslash(commands.Cog):
