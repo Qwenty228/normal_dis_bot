@@ -5,7 +5,7 @@ load_dotenv()
 
 TOKEN = os.getenv("DISCORD_TOKEN")
 
-guild_ids = [int(id) for id in os.getenv['guild_ids'].split(',')]
+guild_ids = [int(id) for id in os.getenv('guild_ids').split(',')]
 
 '''reddit = asyncpraw.Reddit(
     client_id=os.getenv("client_id"),
